@@ -25,7 +25,9 @@ public class EmsServiceImpl implements EmsService {
 	@Override
 	public EmsVO findById(Long id) {
 
-		return null;
+		EmsVO emsVO = emsDao.findById(id);
+		
+		return emsVO;
 	}
 
 	@Override
@@ -38,14 +40,16 @@ public class EmsServiceImpl implements EmsService {
 
 	@Override
 	public int update(EmsVO emsVO) {
-
-		return 0;
+	
+		return emsDao.update(emsVO);
 	}
 
 	@Override
 	public int delete(Long id) {
-
-		return 0;
+		
+		int ret = emsDao.delete(id);
+		
+		return ret;
 	}
 
 }

@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Spring Framework~!!</title>
+<title>💎Email Management System</title>
 </head>
 <body>
 <h3>Helloooooooooooooo :)</h3>
