@@ -129,7 +129,7 @@ public class HomeController {
 			String file_1_Name = fileService.fileUp(file1);
 
 			// 3-3. DB에 저장된 데이터에 파일이름이 있는지 검사
-			if (!emsOldVO.getS_file1().isEmpty()) {
+			if (emsOldVO.getS_file1() !=null && !emsOldVO.getS_file1().isEmpty()) {
 				// 3-4. 있으면 서버에서 파일을 삭제
 				fileService.fileDelete(emsOldVO.getS_file1());
 			}
@@ -149,7 +149,7 @@ public class HomeController {
 
 			String file_2_Name = fileService.fileUp(file2);
 
-			if (!emsOldVO.getS_file2().isEmpty()) {
+			if (emsOldVO.getS_file2() !=null && !emsOldVO.getS_file2().isEmpty()) {
 				fileService.fileDelete(emsOldVO.getS_file2());
 			}
 			emsVO.setS_file2(file_2_Name);
